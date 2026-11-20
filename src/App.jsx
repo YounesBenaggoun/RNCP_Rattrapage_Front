@@ -20,8 +20,11 @@ const TABS = [
 ];
 
 function App() {
-  
+
   const { all, loading, demo } = useEnsoData();
+  console.log("all", all);
+  console.log("loading", loading);
+  console.log("demo", demo);
   const [tab, setTab] = useState("evolution");
   const [theme, setTheme] = useState("light");
   const [from, setFrom] = useState(1990);
